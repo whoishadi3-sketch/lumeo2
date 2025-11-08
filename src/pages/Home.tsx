@@ -38,7 +38,7 @@ export default function Home({ onNavigate }: HomeProps) {
             speed={8}
             scale={1}
             color="#1e3a8a"
-            noiseIntensity={6}
+            noiseIntensity={2.5}
             rotation={0}
           />
         </div>
