@@ -27,10 +27,10 @@ export default function Portfolio() {
     { name: 'Nalgene', description: 'Product brand and e-commerce store', url: 'https://nalgene.com/', image: 'public/portfolio/nalgene.png' },
     { name: 'Pho Cafe', description: 'Restaurant website', url: 'https://www.phocafe.co.uk/', image: 'public/portfolio/pho.png' },
     { name: 'Rasht Delectable', description: 'Food brand e-commerce store', url: 'https://rashtdelectables.com/', image: 'public/portfolio/rasht.png' },
-    { name: 'Container', description: 'Logistics and shipping services', url: 'https://www.container.com/', image: 'public/portfolio/martincontainer.png' },
+    { name: 'Spirit Dog Training', description: 'Dog training services and coaching', url: 'https://spiritdogtraining.com/', image: 'public/portfolio/spiritdog.png' },
     { name: 'SGUA', description: 'Architecture and design firm portfolio', url: 'https://sgua.com.au/', image: 'public/portfolio/sgua.png' },
     { name: 'Breyer Construction', description: 'Construction company portfolio', url: 'https://www.breyerconstruction.com/', image: 'public/portfolio/breyer.png' },
-    { name: 'Spirit Dog Training', description: 'Dog training services and coaching', url: 'https://spiritdogtraining.com/', image: 'public/portfolio/spiritdog.png' },
+    { name: 'Container', description: 'Logistics and shipping services', url: 'https://www.container.com/', image: 'public/portfolio/martincontainer.png' },
     { name: 'HBNO', description: 'Real estate and community website', url: 'https://hbno.com/', image: 'public/portfolio/hbno.png' },
   ];
 
