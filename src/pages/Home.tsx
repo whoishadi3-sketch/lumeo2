@@ -33,7 +33,7 @@ export default function Home({ onNavigate }: HomeProps) {
   return (
     <div className="min-h-screen">
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 opacity-75">
+        <div className="absolute inset-0 opacity-100">
           <Silk
             speed={8}
             scale={1}
