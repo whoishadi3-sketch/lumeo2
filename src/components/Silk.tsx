@@ -55,16 +55,24 @@ void main() {
   vec2  tex        = uv * uScale;
   float tOffset    = uSpeed * uTime;
 
-  tex.y += 0.03 * sin(8.0 * tex.x - tOffset);
+  tex.y += 0.04 * sin(8.0 * tex.x - tOffset);
 
-  float pattern = 0.6 +
-                  0.4 * sin(5.0 * (tex.x + tex.y +
+  float pattern = 0.5 +
+                  0.5 * sin(5.0 * (tex.x + tex.y +
                                    cos(3.0 * tex.x + 5.0 * tex.y) +
                                    0.02 * tOffset) +
                            sin(20.0 * (tex.x + tex.y - 0.1 * tOffset)));
 
-  vec4 col = vec4(uColor, 1.0) * vec4(pattern) - rnd / 15.0 * uNoiseIntensity;
-  col.a = 1.0;
+  // Increase color vibrancy
+  vec3 vivid = normalize(uColor + vec3(0.3, 0.2, 0.4)) * 1.5;
+  vec4 col = vec4(vivid * pattern, 1.0);
+
+  // Add subtle glow by mixing with bright color
+  col.rgb += 0.15 * vec3(1.0, 0.9, 0.8) * pattern;
+
+  // Slight noise texture
+  col.rgb -= rnd / 25.0 * uNoiseIntensity;
+
   gl_FragColor = col;
 }
 `;
@@ -85,13 +93,23 @@ const SilkPlane = forwardRef(function SilkPlane({ uniforms }, ref) {
   return (
     <mesh ref={ref}>
       <planeGeometry args={[1, 1, 1, 1]} />
-      <shaderMaterial uniforms={uniforms} vertexShader={vertexShader} fragmentShader={fragmentShader} />
+      <shaderMaterial
+        uniforms={uniforms}
+        vertexShader={vertexShader}
+        fragmentShader={fragmentShader}
+      />
     </mesh>
   );
 });
 SilkPlane.displayName = 'SilkPlane';
 
-const Silk = ({ speed = 5, scale = 1, color = '#7B7481', noiseIntensity = 1.5, rotation = 0 }) => {
+const Silk = ({
+  speed = 5,
+  scale = 1,
+  color = '#9B5DE5', // 💜 Brighter default color
+  noiseIntensity = 1.2,
+  rotation = 0
+}) => {
   const meshRef = useRef();
 
   const uniforms = useMemo(
