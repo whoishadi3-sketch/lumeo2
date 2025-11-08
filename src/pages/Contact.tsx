@@ -102,7 +102,7 @@ export default function Contact({ onNavigate }: ContactProps) {
           </form>
 
           <p className="text-[#94a3b8] text-sm text-center mt-6">
-            (This form will be connected to Resend.com later for email automation.)
+            Reach out to us, and we’ll get back to you shortly.
           </p>
         </div>
 
