@@ -35,7 +35,7 @@ export default function Home({ onNavigate }: HomeProps) {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 opacity-30">
           <Silk
-            speed={5}
+            speed={8}
             scale={1}
             color="#692db3"
             noiseIntensity={5.5}
