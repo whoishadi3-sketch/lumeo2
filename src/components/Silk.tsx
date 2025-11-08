@@ -104,7 +104,7 @@ const SilkPlane = forwardRef(function SilkPlane({ uniforms }, ref) {
 SilkPlane.displayName = 'SilkPlane';
 
 const Silk = ({
-  speed = 5,
+  speed = 8,
   scale = 1,
   color = '#62e55d', // 💜 Brighter default color
   noiseIntensity = 1.2,
