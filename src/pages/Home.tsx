@@ -37,7 +37,7 @@ export default function Home({ onNavigate }: HomeProps) {
           <Silk
             speed={8}
             scale={1}
-            color="#00d9ed"
+            color="#960f5e"
             noiseIntensity={6}
             rotation={0}
           />
