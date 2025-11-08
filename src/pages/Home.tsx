@@ -36,7 +36,7 @@ export default function Home({ onNavigate }: HomeProps) {
         <div className="absolute inset-0 opacity-30">
           <Silk
             speed={8}
-            scale={1}
+            scale={2}
             color="#692db3"
             noiseIntensity={5.5}
             rotation={0}
