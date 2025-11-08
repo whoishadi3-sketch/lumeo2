@@ -13,7 +13,7 @@ export default function Portfolio() {
 
   const projectsData: Project[] = [
     { name: 'Wilde Brands', description: 'E-commerce fashion brand site', url: 'https://www.wildebrands.com/', image: 'public/portfolio/wildebrands.png' },
-    { name: 'Nalgene', description: 'Product brand and e-commerce store', url: 'https://nalgene.com/', image: 'public/portfolio/nalgene.png' },
+    { name: 'Jeton', description: 'Fintech payment platform', url: 'https://www.jeton.com/', image: 'public/portfolio/jeton.png' },
     { name: '99% Invisible', description: 'Digital design and media publication', url: 'https://99percentinvisible.org/', image: 'public/portfolio/99.png' },
     { name: 'Breyer Construction', description: 'Construction company portfolio', url: 'https://www.breyerconstruction.com/', image: 'public/portfolio/breyer.png' },
     { name: 'Pho Cafe', description: 'Restaurant website', url: 'https://www.phocafe.co.uk/', image: 'public/portfolio/pho.png' },
@@ -24,7 +24,7 @@ export default function Portfolio() {
     { name: 'Seraat', description: 'Business services website', url: 'https://www.seraat.com/', image: 'public/portfolio/seraat.png' },
     { name: 'Vintage Modern Films', description: 'Creative production company', url: 'https://www.vintagemodernfilms.com/', image: 'public/portfolio/vintagemodernfilms.png' },
     { name: 'Big Night', description: 'Restaurant and events venue site', url: 'https://www.bignight.com/', image: 'public/portfolio/bignight.png' },
-    { name: 'Jeton', description: 'Fintech payment platform', url: 'https://www.jeton.com/', image: 'public/portfolio/jeton.png' },
+    { name: 'Nalgene', description: 'Product brand and e-commerce store', url: 'https://nalgene.com/', image: 'public/portfolio/nalgene.png' },
     { name: 'Inflow Saas', description: 'Powerful cloud-based CRM for businesses', url: 'https://inflowcore.netlify.app/', image: 'public/portfolio/inflow.png' },
     { name: 'Rasht Delectable', description: 'Food brand e-commerce store', url: 'https://rashtdelectables.com/', image: 'public/portfolio/rasht.png' },
     { name: 'Container', description: 'Logistics and shipping services', url: 'https://www.container.com/', image: 'public/portfolio/martincontainer.png' },
