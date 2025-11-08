@@ -25,7 +25,7 @@ export default function Portfolio() {
     { name: 'Vintage Modern Films', description: 'Creative production company', url: 'https://www.vintagemodernfilms.com/', image: 'public/portfolio/vintagemodernfilms.png' },
     { name: 'Big Night', description: 'Restaurant and events venue site', url: 'https://www.bignight.com/', image: 'public/portfolio/bignight.png' },
     { name: 'Jeton', description: 'Fintech payment platform', url: 'https://www.jeton.com/', image: 'public/portfolio/jeton.png' },
-    { name: 'Hawaiian Style Rentals', description: 'Vacation rental booking site', url: 'https://inflowcore.netlify.app/', image: 'public/portfolio/inflow.png' },
+    { name: 'Inflow Saas', description: 'Powerful cloud-based CRM for businesses', url: 'https://inflowcore.netlify.app/', image: 'public/portfolio/inflow.png' },
     { name: 'Rasht Delectable', description: 'Food brand e-commerce store', url: 'https://rashtdelectables.com/', image: 'public/portfolio/rasht.png' },
     { name: 'Container', description: 'Logistics and shipping services', url: 'https://www.container.com/', image: 'public/portfolio/martincontainer.png' },
     { name: "Let's Encrypt", description: 'Internet security and encryption services', url: 'https://letsencrypt.org/', image: 'public/portfolio/letsencrypt.png' },
